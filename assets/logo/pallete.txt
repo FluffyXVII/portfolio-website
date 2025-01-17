@@ -1,0 +1,11 @@
+Light Mode: BG: #e3dad0
+
+Color 1		Color 2 	Color 3		Color 4		Color 5
+#344960		#8c7b6e		#cc8561		#ddc9be		#e3dad0
+
+
+
+Dark Mode: BG: #0f222d
+
+Color 1		Color 2		Color 3		Color 4		Color 5
+#0f222d		#2a3c47		#ba3521		#ebe7d9		#fef4cf
