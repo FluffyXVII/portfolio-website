@@ -7,7 +7,7 @@ Link : https://anugrah.dev
 # Things to Address:
 1. Fix the Dark Reader extension issue.
 2. Mobile Compatibility.
-3. New About and Projects pages.
+3. ~~New About and Projects pages.~~ <-- DONE
 4. Add Content.
 5. ~~Get Custom Domain.~~ <-- DONE
 6. Finalize the design and structure of the site.
