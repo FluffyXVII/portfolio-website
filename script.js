@@ -3,10 +3,10 @@ function updateFavicon() {
 
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         // System is in DARK mode, use LIGHT favicon
-        favicon.href = "assets/logo/favicons/favicon-light.ico";
+        favicon.href = "assets/logo/favicons/favicon-dark.ico";
     } else {
         // System is in LIGHT mode, use DARK favicon
-        favicon.href = "assets/logo/favicons/favicon-dark.ico";
+        favicon.href = "assets/logo/favicons/favicon-light.ico";
     }
 }
 
