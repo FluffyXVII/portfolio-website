@@ -1,40 +1,49 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Anugrah</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/logo/favicons/favicon-light.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Anugrah</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo/favicons/favicon-light.ico" type="image/x-icon" />
 </head>
-<body class="bg-[#0f222d] text-gray-100 h-screen w-auto">
-    <header class="bg-[#0f222d] dot-matrix flex justify-between items-center px-10 py-4">
-        <div class="flex items-center">
-            <a href="index.html">
-                <img id="logo" src="assets/logo/logo.png" alt="Logo" class="w-32 h-auto"> 
-            </a>
-        </div>
-        <nav id="nav" class="absolute right-14 space-x-6 text-lg font-medium">
-            <a href="index.html" class="text-[#ebe7d9] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// home</a>
-            <a href="about.html" class="text-[#ebe7d9] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300 aria-[current=page]:underline aria-[current=page]:underline-offset-4" aria-current="page">// about</a>
-            <a href="projects.html" class="text-[#ebe7d9] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// projects</a>
-            <a href="resume.html" class="text-[#ebe7d9] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// resume</a>
-        </nav>
-    </header>
+<body class="bg-gray-950 text-gray-100 h-full relative">
+  <!-- Spotlight Glow Effect -->
+  <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[50%] pointer-events-none z-[-1] blur-3xl" 
+       style="background: radial-gradient(circle at top center, rgba(255,255,255,0.2), transparent 50%);"></div>
 
-    <div class="flex flex-col items-center justify-start p-4">
-        <h1 class="text-4xl font-bold pt-10">/* About */</h1>
-        <p class="text-lg leading-relaxed mb-6 text-left"><br>
-            <br>//brief introduction<br>
-            <br>//education<br>
-            <br>//experience<br>
-            <br>//skills<br>
-            <br>//hobbies<br>
-        </p>
-    </div>
+  <!-- 3D Isometric Glass Navbar -->
+  <header class="relative dot-matrix w-2/3 mx-auto mt-10 p-4 bg-white/10 backdrop-blur-md border border-gray-700 shadow-2xl rounded-2xl transform rotate-x-6 rotate-y-6">
+    <nav id="nav" class="text-center space-x-6 text-lg font-medium">
+      <a href="index.html" class="text-gray-300 tracking-wide hover:underline hover:text-red-600 transition duration-300">// home</a>
+      <span></span>
+      <a href="about.html" class="text-gray-300 hover:underline hover:text-red-600 transition duration-300" aria-current="page">// about</a>
+      <span></span>
+      <a href="projects.html" class="text-gray-300 hover:underline hover:text-red-600 transition duration-300">// projects</a>
+      <span></span>
+      <a href="resume.html" class="text-gray-300 hover:underline hover:text-red-600 transition duration-300">// resume</a>
+    </nav>
+    <!-- 3D Thickness Layer -->
+    <div class="absolute inset-0 bg-black/50 rounded-2xl transform translate-x-2 translate-y-2 blur z-[-1]"></div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="flex flex-col items-center justify-start p-4">
+    <h1 class="text-4xl font-bold pt-10">/* About */</h1>
+    <p class="text-lg leading-relaxed mb-6 text-left">
+      <br>// brief introduction<br>
+      <br>// education<br>
+      <br>// experience<br>
+      <br>// skills<br>
+      <br>// hobbies<br>
+    </p>
+  </div>
 </body>
 </html>

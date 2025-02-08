@@ -1,80 +1,83 @@
-
-:host,html {
-    -webkit-text-size-adjust: 100%;
-    overflow-y: scroll;    
+:host,
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;
 }
 body {
-    font-family: 'Josefin Sans', sans-serif;
+  font-family: "Fira Code", sans-serif;
 }
 
-.dot-matrix, .dot-matrix-dark {
-    position: relative;
+.dot-matrix,
+.dot-matrix-dark {
+  position: relative;
 }
 
 .dot-matrix-dark::before {
-    background: radial-gradient(circle, #0f222d 20%, transparent 20%) repeat;
-    opacity: 0.2; /* Adjust opacity for visibility */
+  background: radial-gradient(circle, #0f222d 20%, transparent 20%) repeat;
+  opacity: 0.2; /* Adjust opacity for visibility */
 }
 
 .dot-matrix::before {
-    background: radial-gradient(circle, #ebe7d9 20%, transparent 20%) repeat;
-    opacity: 0.1; /* Adjust opacity for visibility */
+  background: radial-gradient(circle, #ebe7d9 20%, transparent 20%) repeat;
+  opacity: 0.1; /* Adjust opacity for visibility */
 }
 
-.dot-matrix::before,.dot-matrix-dark::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: 8px 8px; /* Adjust size of dots */
-    pointer-events: none; /* Allow clicks to pass through */
+.dot-matrix::before,
+.dot-matrix-dark::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 8px 8px; /* Adjust size of dots */
+  pointer-events: none; /* Allow clicks to pass through */
 }
 
 /* New styles for responsive font sizes */
 h2 {
-    font-size: calc(1.5rem + 1vw); /* Responsive size */
+  font-size: calc(1.5rem + 1vw); /* Responsive size */
 }
 h3 {
-    font-size: calc(1.25rem + 0.5vw); /* Responsive size */
+  font-size: calc(1.25rem + 0.5vw); /* Responsive size */
 }
 p {
-    font-size: calc(1rem + 0.2vw); /* Responsive size */
+  font-size: calc(1rem + 0.2vw); /* Responsive size */
 }
 
 @media (max-height: 600px) {
-    h2 {
-        font-size: 1.25rem; /* Adjusted size for smaller screens */
-    }
-    h3 {
-        font-size: 1rem; /* Adjusted size for smaller screens */
-    }
-    p {
-        font-size: 0.875rem; /* Adjusted size for smaller screens */
-    }
+  h2 {
+    font-size: 1.25rem; /* Adjusted size for smaller screens */
+  }
+  h3 {
+    font-size: 1rem; /* Adjusted size for smaller screens */
+  }
+  p {
+    font-size: 0.875rem; /* Adjusted size for smaller screens */
+  }
 }
 
 /* New styles to prevent overlap */
 .content {
-    max-height: calc(100vh - 80px); /* Adjust based on nav height */
-    overflow-y: auto; /* Allow scrolling if content overflows */
-    padding-top: 80px; /* Ensure content starts below the nav */
+  max-height: calc(100vh - 80px); /* Adjust based on nav height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  padding-top: 80px; /* Ensure content starts below the nav */
 }
 
 .card-projects {
-    border-radius: 3px;    
-    width: 300px; /* Set a fixed width for the card */
-    height: 300px; /* Allow height to adjust based on content */
-    border: 1px solid #ffffff;
-    border-style: solid; /* Change to solid for a more defined card look */
-    
-    text-align: center;
-    background-color: rgba(42, 60, 71, 0.5); /* Add a subtle background color */
-     /* Enhance shadow for depth */
-    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
-    &:hover {
-        box-shadow: 4px 5px 0px rgba(235, 231, 217, 1); /* Add transition for shadow */
-        background-color: rgba(255, 255, 255, 0.2);
-    }
+  border-radius: 3px;
+  width: 200px; /* Set a fixed width for the card */
+  height: 300px; /* Allow height to adjust based on content */
+  border: 1px solid #ffffff;
+  border-style: solid; /* Change to solid for a more defined card look */
+
+  text-align: center;
+  background-color: rgba(42, 60, 71, 0.5); /* Add a subtle background color */
+  /* Enhance shadow for depth */
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 4px 5px 0px rgba(235, 231, 217, 1); /* Add transition for shadow */
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }

@@ -9,13 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body id="home" class="bg-gray-900 text-gray-100">
+<body id="home" class="bg-gray-950 text-gray-100">
     <div class="flex h-screen">
         <!-- Left Section -->
-        <div class="w-1/2 bg-[#0f222d] dot-matrix flex items-center justify-center p-10">
+        <div class="w-1/2 bg-gray-900 dot-matrix flex items-center justify-center p-10">
             <div id="logo" class="relative flex items-center justify-center">
 
                 <img src="assets/logo/logo.svg" alt="Logo" class="relative w-64 h-64"> 
@@ -23,16 +23,25 @@
         </div>
 
         <!-- Right Section -->  
-        <div class="w-1/2 bg-[#ebe7d9] text-gray-900 flex flex-col">
-            <header class="py-11 px-4 dot-matrix-dark">
-                <nav id="nav" class="absolute top-7 right-14 space-x-6 text-lg font-medium">
-                    <a href="index.html" class="text-[#2a3c47] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300 aria-[current=page]:underline aria-[current=page]:underline-offset-4" aria-current="page">// home</a>
-                    <a href="about.html" class="text-[#2a3c47] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// about</a>
-                    <a href="projects.html" class="text-[#2a3c47] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// projects</a>
-                    <a href="resume.html" class="text-[#2a3c47] hover:underline hover:text-[#ba3521] hover:underline-offset-4 ease-in-out duration-300">// resume</a> 
-                </nav>
-            </header>
-            <div class="content px-10 py-20">
+        <div class="w-1/2 bg-gray-950 text-gray-900 flex flex-col">
+            <!-- <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] h-[50%] pointer-events-none z-[-1] blur-3xl" 
+         style="background: radial-gradient(circle at top center, rgba(255,255,255,0.2), transparent 50%);"></div> -->
+  
+    <!-- 3D Isometric Glass Navbar -->
+    <header class="relative  w-5/7 mx-auto ml-4 mt-10 py-4 px-3 bg-white/10 backdrop-blur-lg border border-gray-700 shadow-2xl rounded-2xl transform rotate-x-6 rotate-y-6">
+      <nav id="nav" class="text-center space-x-6 text-lg font-medium">
+        <a href="index.html" class="text-gray-300 tracking-wide hover:underline hover:text-red-300 transition duration-300">// home</a>
+        
+        <a href="about.html" class="text-gray-300 hover:underline hover:text-red-300 transition duration-300">// about</a>
+        
+        <a href="projects.html" class="text-gray-300 hover:underline hover:text-red-300 transition duration-300" aria-current="page">// projects</a>
+        
+        <a href="resume.html" class="text-gray-300 hover:underline hover:text-red-300 transition duration-300">// resume</a>
+      </nav>
+      <!-- 3D Thickness Layer -->
+      <div class="absolute inset-0 bg-black/50 rounded-2xl transform translate-x-2 translate-y-2 blur z-[-1]"></div>
+    </header>
+            <div class="content px-10 py-20 text-gray-300">
                 <h2 class="text-2xl font-bold mb-4 text-center">🚧 Work in Progress 🚧</h2>
                 <p class="text-lg leading-relaxed mb-6 text-left">
                     Hey there! 👋 <br><br>
@@ -42,10 +51,10 @@
                 </p>
                 <p class="mb-6">anugrah@anugrah.dev<br></p>
                 <div class="flex space-x-4">
-                    <a href="https://www.youtube.com/@anugrah-dev" target="_blank"> <img src="assets/icons/youtube.svg" alt="YouTube" class="w-8 h-8 hover:scale-110 ease-in-out duration-300"></a>
-                    <a href="https://www.instagram.com/anugrahnm.dev/" target="_blank"> <img src="assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8 hover:scale-110 ease-in-out duration-300"></a>
-                    <a href="https://www.linkedin.com/in/anugrahnm" target="_blank"> <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="w-8 h-8 hover:scale-110 ease-in-out duration-300"></a>
-                    <a href="https://github.com/FluffyXVII" target="_blank"> <img src="assets/icons/github.svg" alt="GitHub" class="w-8 h-8 hover:scale-110 ease-in-out duration-300"></a>
+                    <a href="https://www.youtube.com/@anugrah-dev" target="_blank"> <img src="assets/icons/youtube.svg" alt="YouTube" class="w-8 h-8 bg-white rounded-md hover:scale-110 ease-in-out duration-300"></a>
+                    <a href="https://www.instagram.com/anugrahnm.dev/" target="_blank"> <img src="assets/icons/instagram.svg" alt="Instagram" class="w-8 h-8 bg-white rounded-md hover:scale-110 ease-in-out duration-300"></a>
+                    <a href="https://www.linkedin.com/in/anugrahnm" target="_blank"> <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="w-8 h-8 bg-white rounded-md hover:scale-110 ease-in-out duration-300"></a>
+                    <a href="https://github.com/FluffyXVII" target="_blank"> <img src="assets/icons/github.svg" alt="GitHub" class="w-8 h-8 bg-white rounded-md hover:scale-110 ease-in-out duration-300"></a>
                 </div>
             </div>
         </div>
