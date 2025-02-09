@@ -2,6 +2,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Fira Code", sans-serif;
